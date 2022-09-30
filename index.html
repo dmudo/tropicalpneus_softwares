@@ -12,44 +12,60 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   </head>
+
+  <!-- Script para acionar o botão de download-->
+  <script language="JavaScript" type="text/javascript"> 
+  
+
+
+function downloadAll(urls) {
+  var link = document.createElement('a');
+
+  link.setAttribute('download', null);
+  link.style.display = 'none';
+
+  document.body.appendChild(link);
+
+  for (var i = 0; i < urls.length; i++) {
+    link.setAttribute('href', urls[i]);
+    link.click();
+  }
+
+  document.body.removeChild(link);
+}
+</script>
+  
   <body>
+  <!-- Download Button-->
   
     <div class="container">
      <div class="child">
+     
         <ul>
-            <h4>Navegadores</h4>
+           <h4>Navegadores</h4>
         <li>
-        <label for="cb_5hco5" title="Sobre o software">
-            <input type="checkbox" class="js-homepage-app-checkbox" name="apps" value="vlc" id="cb_5hco5">
-            <span class="icn16 icn16_qsikq;"></span>
+        <label title="Sobre o software">
+            <input type="checkbox" name="apps" value="http://localhost:9090/tropicalpneus_softwares/doc/teste.pdf" id="apps_1"><a href="http://localhost:9090/tropicalpneus_softwares/doc/teste.pdf">PDF teste</a>
             <font style="vertical-align: inherit;"> software </font>
         </label>
         </li>
         <li>
-            <label for="cb_5hco5" title="Sobre o software">
-                <input type="checkbox" class="js-homepage-app-checkbox" name="apps" value="vlc" id="cb_5hco5">
-                <span class="icn16 icn16_qsikq;"></span>
-                <font style="vertical-align: inherit;"> software </font>
-            </label>
-            </li>
-            <li>
-                <label for="cb_5hco5" title="Sobre o software">
-                    <input type="checkbox" class="js-homepage-app-checkbox" name="apps" value="vlc" id="cb_5hco5">
-                    <span class="icn16 icn16_qsikq;"></span>
-                    <font style="vertical-align: inherit;"> software </font>
-                </label>
-                </li>
-                <li>
-                    <label for="cb_5hco5" title="Sobre o software">
-                        <input type="checkbox" class="js-homepage-app-checkbox" name="apps" value="vlc" id="cb_5hco5">
-                        <span class="icn16 icn16_qsikq;"></span>
-                        <font style="vertical-align: inherit;"> software </font>
-                    </label>
-                </li>
+        <label title="Sobre o software">
+            <input type="checkbox" name="apps" value="http://localhost:9090/tropicalpneus_softwares/doc/teste.pdf" id="apps_2"><a href="http://localhost:9090/tropicalpneus_softwares/doc/teste.pdf">PDF teste</a>
+            <font style="vertical-align: inherit;"> software </font>
+        </label>
+        </li>
         </ul>
+       
      </div>
-     
     </div>
-  </body>
+    <div class="button">
+       <button onclick="downloadAll(window.links)">Test me!</button>
+    </div>
+   
+  
+
+</body>
 </html>
 
+https://stackoverflow.com/questions/2339440/download-multiple-files-with-a-single-action
