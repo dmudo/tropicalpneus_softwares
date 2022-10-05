@@ -12,15 +12,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   </head>
-
   <!-- Script para acionar o botão de download-->
-
-
-
   <body>
   <!-- Download Button-->
-
-  <button id="download-button" data-files="unicorn.jpg rainbow.jpg">Download COmplet</button>
+  <button id="download-button" data-files="unicorn.jpg rainbow.jpg">Download Complet</button>
 
   <script type="module">
     import multiDownload from 'multi-download';
@@ -28,15 +23,14 @@
     document.querySelector('#download-button').addEventListener('click', event => {
       const files = event.target.dataset.files.split(' ');
       multiDownload(files);
-    });
+  });
     
       </script>
   
     <div class="container">
      <div class="child">
-     
-        <ul>
-           <h4>Navegadores</h4>
+      <ul>
+        <h4>Navegadores</h4>
         <li>
         <label title="Sobre o software">
             <input type="checkbox" name="apps" value="http://localhost/tropicalpneus_softwares/doc/teste.pdf" id="apps_1"><a href="http://localhost:9090/tropicalpneus_softwares/doc/teste.pdf">PDF teste</a>
@@ -50,15 +44,10 @@
         </label>
         </li>
         </ul>
-       
      </div>
     </div>
-    <div class="button">
-     
-    </div>
-   
-  
-
+   <div class="button">
+  </div>
 </body>
 </html>
 
