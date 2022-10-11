@@ -1,13 +1,12 @@
 body {
 
     font-family: 'Roboto';
-    padding-top: 45px;
+    padding-top: 25px;
     height: 100%;
-
-
+    font-size: 1vw;
 }
 
-h1 {
+h2 {
     text-align: center;
 }
 
@@ -23,8 +22,8 @@ h1 {
 
     /* Centralizar na vertical e horizontal */
     position: absolute;
-    top: 20%;
-    left: 50%;
+    top: 15%;
+    left: 52%;
     /* aplique margens superior e esquerda negativas para centralizar o elemento 
     margin: -25px 0 0 -25px;*/
 
@@ -43,8 +42,8 @@ h1 {
 
     /* Centralizar na vertical e horizontal */
     position: absolute;
-    top: 20%;
-    left: 62%;
+    top: 15%;
+    left: 64%;
     /* aplique margens superior e esquerda negativas para centralizar o elemento 
     margin: -25px 0 0 -25px;*/
 
@@ -62,7 +61,7 @@ h1 {
 
     /* Centralizar na vertical e horizontal */
     position: absolute;
-    top: 20%;
+    top: 15%;
     left: 38%;
     /* aplique margens superior e esquerda negativas para centralizar o elemento 
     margin: -25px 0 0 -25px;*/
@@ -81,7 +80,7 @@ h1 {
 
     /* Centralizar na vertical e horizontal */
     position: absolute;
-    top: 20%;
+    top: 15%;
     left: 25%;
     /* aplique margens superior e esquerda negativas para centralizar o elemento 
     margin: -25px 0 0 -25px;*/
@@ -100,7 +99,7 @@ h1 {
 
     /* Centralizar na vertical e horizontal */
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 25%;
     /* aplique margens superior e esquerda negativas para centralizar o elemento 
     margin: -25px 0 0 -25px;*/
@@ -114,6 +113,19 @@ button {
     font-family: 'Roboto';
 
 
+}
 
+footer {
+
+    position: fixed;
+    height: 50px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: 1vw;
+    font-family: 'Roboto';
+    
 
 }
