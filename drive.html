@@ -8,7 +8,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="imagens/favicon.ico">
-  <link href="css/index.css" rel="stylesheet" type='text/css'>
+  <link href="css/drive.css" rel="stylesheet" type='text/css'>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
@@ -40,9 +40,18 @@
     multiDownload(files);
   });
 </script>
+
 <script type="module">
   import multiDownload from '/js/drive.js';
   document.querySelector('#download-button4').addEventListener('click', event => {
+    const files = event.target.dataset.files.split(' ');
+    multiDownload(files);
+  });
+</script>
+
+<script type="module">
+  import multiDownload from '/js/drive.js';
+  document.querySelector('#download-button5').addEventListener('click', event => {
     const files = event.target.dataset.files.split(' ');
     multiDownload(files);
   });
@@ -211,6 +220,39 @@
       </ul>
     </div>
   </div>
+
+  <div class="container5">
+    <div class="child5">
+      <ul>
+        <h4>Softwares Diversos</h4>
+        <li>
+          <label title="Sophos AntiVirus">
+            <a href="/doc/SophosSetup.exe">Sophos AntiVirus</a>
+          </label>
+        </li>
+        <br>
+        <li>
+          <label title="Open VPN">
+            <a href="/doc/openvpn-install-2.4.11-I602-Win7.exe">Open VPN</a>
+          </label>
+        </li>
+        <br>
+        <li>
+          <label title="Team View 15 QS">
+            <a href="/doc/TeamViewerQS.exe">Team View 15 QS</a>
+          </label>
+        </li>
+        <br>
+        <br>
+
+        <button id="download-button5"
+          data-files="/doc/SophosSetup.exe /doc/openvpn-install-2.4.11-I602-Win7.exe /doc/TeamViewerQS.exe">Download
+          Completo</button>
+
+      </ul>
+    </div>
+  </div>
+
 
 </body>
 
