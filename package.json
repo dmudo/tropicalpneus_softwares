@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "jszip": "^3.10.1",
     "multi-download": "^4.0.0"
   }
 }

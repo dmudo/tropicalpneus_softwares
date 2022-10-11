@@ -1,30 +1,100 @@
+body {
+
+    font-family: 'Roboto';
+    padding-top: 45px;
+    height: 100%;
+
+
+}
+
+h1 {
+    text-align: center;
+}
+
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 1vw;
 }
 
- 
+
 .child {
-   
+
     /* Centralizar na vertical e horizontal */
     position: absolute;
     top: 20%;
     left: 50%;
-    /* aplique margens superior e esquerda negativas para centralizar o elemento */
-    margin: -25px 0 0 -25px;
-    
+    /* aplique margens superior e esquerda negativas para centralizar o elemento 
+    margin: -25px 0 0 -25px;*/
+
 }
 
-.button {
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1vw;
+}
+
+
+.child2 {
 
     /* Centralizar na vertical e horizontal */
     position: absolute;
-    top: 60%;
-    left: 50%;
-    /* aplique margens superior e esquerda negativas para centralizar o elemento */
-    margin: -25px 0 0 -25px;
-
+    top: 20%;
+    left: 62%;
+    /* aplique margens superior e esquerda negativas para centralizar o elemento 
+    margin: -25px 0 0 -25px;*/
 
 }
 
+.container3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1vw;
+}
+
+
+.child3 {
+
+    /* Centralizar na vertical e horizontal */
+    position: absolute;
+    top: 20%;
+    left: 38%;
+    /* aplique margens superior e esquerda negativas para centralizar o elemento 
+    margin: -25px 0 0 -25px;*/
+
+}
+
+.container4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1vw;
+}
+
+
+.child4 {
+
+    /* Centralizar na vertical e horizontal */
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    /* aplique margens superior e esquerda negativas para centralizar o elemento 
+    margin: -25px 0 0 -25px;*/
+
+}
+
+button {
+
+
+    font-size: 1vw;
+    font-family: 'Roboto';
+
+
+
+
+}

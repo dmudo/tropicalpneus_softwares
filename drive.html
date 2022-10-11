@@ -1,0 +1,217 @@
+<!DOCTYPE html
+
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+<head>
+  <title>Download Softwares</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="imagens/favicon.ico">
+  <link href="css/index.css" rel="stylesheet" type='text/css'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+
+<!-- Script para acionar o botão de download-->
+<script type="module">
+  import multiDownload from '/js/drive.js';
+  document.querySelector('#download-button').addEventListener('click', event => {
+    const files = event.target.dataset.files.split(' ');
+    multiDownload(files);
+  });
+</script>
+
+<script type="module">
+  import multiDownload from '/js/drive.js';
+  document.querySelector('#download-button2').addEventListener('click', event => {
+    const files = event.target.dataset.files.split(' ');
+    multiDownload(files);
+  });
+</script>
+
+<script type="module">
+  import multiDownload from '/js/drive.js';
+  document.querySelector('#download-button3').addEventListener('click', event => {
+    const files = event.target.dataset.files.split(' ');
+    multiDownload(files);
+  });
+</script>
+<script type="module">
+  import multiDownload from '/js/drive.js';
+  document.querySelector('#download-button4').addEventListener('click', event => {
+    const files = event.target.dataset.files.split(' ');
+    multiDownload(files);
+  });
+</script>
+
+<body>
+
+<H1>Lista de alguns softwares para auxílio na instalação/atualização</H1>
+
+  <div class="container">
+    <div class="child">
+      <ul>
+        <h4>Navegadores</h4>
+        <li>
+          <label title="Chrome Offline">
+            <a href="/doc/ChromeStandaloneSetup64.exe">Chrome Offline</a>
+          </label>
+        </li>
+        <br>
+        <li>
+          <label title="Firefox Offline">
+            <a href="/doc/FirefoxSetup105.0.3.exe">Firefox Offline</a>
+          </label>
+        </li>
+        <br>
+        <li>
+          <label title="Edge Offline">
+            <a href="/doc/MicrosoftEdgeEnterpriseX64.msi">Edge Offline</a>
+          </label>
+        </li>
+        <br>
+        <li>
+          <label title="Opera Offline">
+            <a href="/doc/OperaSetup.exe">Opera Offline</a>
+          </label>
+        </li>
+        <br>
+        <br>
+        <button id="download-button"
+          data-files="/doc/ChromeStandaloneSetup64.exe /doc/FirefoxSetup105.0.3.exe /doc/MicrosoftEdgeEnterpriseX64.msi /doc/OperaSetup.exe">Download
+          Completo</button>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container2">
+    <div class="child2">
+      <ul>
+        <h4>Drive Impressoras</h4>
+        <li>
+          <label title="Brother DCP-7065DN">
+            <a href="/doc/DCP7065DN.exe">Brother DCP-7065DN</a>
+          </label>
+        </li>
+        <br>
+        <li>
+          <label title="Control Center CC4">
+            <a href="/doc/ControlCenter4Updater.exe">Control Center CC4</a>
+          </label>
+        </li>
+        <br>
+        <li>
+          <label title="Epson XP 241">
+            <a href="/doc/XP241_Lite_LA.exe">Epson XP 241</a>
+          </label>
+        </li>
+        <br>
+        <li>
+          <label title="HP MFP M125">
+            <a href="/doc/LJPro_MFP_M125-126_full_solution_15310.exe">HP MFP M125</a>
+          </label>
+        </li>
+        <br>
+        <li>
+          <label title="HP MFP M127">
+            <a href="/doc/LJPro_MFP_M127-M128_basic_15309.exe">HP MFP M127</a>
+          </label>
+        </li>
+        <br>
+        <li>
+          <label title="LexMark X364 Full">
+            <a href="/doc/Lexmark_X264_X363_X364_ACJ_Admin.exe">LexMark X364 Full</a>
+          </label>
+        </li>
+        <br>
+        <li>
+          <label title="Epson LX350">
+            <a href="/doc/epson15229_windows10.exe">Epson LX350</a>
+          </label>
+        </li>
+        <br>
+        <li>
+          <label title="Samsung SCX 483x 5x3x">
+            <a href="/doc/SCX-483x_5x3x_Series_WIN_Scanner_V3.21.65.11_CDV1.51.exe">Samsung SCX 483x 5x3x</a>
+          </label>
+        </li>
+        <br>
+        <li>
+          <label title="Smartru Office">
+            <a href="/doc/SmarThruOffice_V2.10.00.07.exe">Smartru Office</a>
+          </label>
+        </li>
+        <br>
+
+        <button id="download-button2"
+          data-files="/doc/DCP7065DN.exe /doc/ControlCenter4Updater.exe /doc/XP241_Lite_LA.exe /doc/LJPro_MFP_M125-126_full_solution_15310.exe /doc/LJPro_MFP_M127-M128_basic_15309.exe /doc/Lexmark_X264_X363_X364_ACJ_Admin.exe /doc/epson15229_windows10.exe /doc/SCX-483x_5x3x_Series_WIN_Scanner_V3.21.65.11_CDV1.51.exe /doc/SmarThruOffice_V2.10.00.07.exe /doc/SmarThruOffice_V2.10.00.07.exe">Download
+          Completo</button>
+
+      </ul>
+    </div>
+  </div>
+
+  <div class="container3">
+    <div class="child3">
+      <ul>
+        <h4>Softwares Movere</h4>
+        <li>
+          <label title="Configurador Movere">
+            <a href="/doc/configureMeuMovere.exe">Configurador Movere</a>
+          </label>
+        </li>
+        <br>
+        <li>
+          <label title="Serviço de Impressão">
+            <a href="/doc/ServicodeImpressão.rar">Serviço de Impressão</a>
+          </label>
+        </li>
+        <br>
+        <br>
+
+        <button id="download-button3" data-files="/doc/configureMeuMovere.exe /doc/ServicodeImpressão.rar">Download
+          Completo</button>
+
+      </ul>
+    </div>
+  </div>
+
+  <div class="container4">
+    <div class="child4">
+      <ul>
+        <h4>Softwares Check List</h4>
+        <li>
+          <label title="Sophos AntiVirus">
+            <a href="/doc/SophosSetup.exe">Sophos AntiVirus</a>
+          </label>
+        </li>
+        <br>
+        <li>
+          <label title="Open VPN">
+            <a href="/doc/openvpn-install-2.4.11-I602-Win7.exe">Open VPN</a>
+          </label>
+        </li>
+        <br>
+        <li>
+          <label title="Team View 15 QS">
+            <a href="/doc/TeamViewerQS.exe">Team View 15 QS</a>
+          </label>
+        </li>
+        <br>
+        <br>
+
+        <button id="download-button4"
+          data-files="/doc/SophosSetup.exe /doc/openvpn-install-2.4.11-I602-Win7.exe /doc/TeamViewerQS.exe">Download
+          Completo</button>
+
+      </ul>
+    </div>
+  </div>
+
+</body>
+
+</html>
