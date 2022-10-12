@@ -1,5 +1,5 @@
 # Softwares Check List - Tropicalpneus
-Base com alguns softwares para facilitar o download na rede interna.
+Base com alguns softwares para facilitar o download na intranet.
 
 ![image](https://user-images.githubusercontent.com/12467009/195185076-931979ce-1a0d-4a4d-877e-d5189b6671ca.png)
 
