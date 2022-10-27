@@ -1,10 +1,9 @@
 <!DOCTYPE html
-
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 
 <head>
-  <title>Download Softwares</title>
+  <title>WEB Drive</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="imagens/favicon.ico">
@@ -57,9 +56,17 @@
   });
 </script>
 
+<script type="module">
+  import multiDownload from '/js/drive.js';
+  document.querySelector('#download-button6').addEventListener('click', event => {
+    const files = event.target.dataset.files.split(' ');
+    multiDownload(files);
+  });
+</script>
+
 <body>
 
-<H2>Lista de alguns softwares para auxílio na instalação/atualização</H2>
+  <H2>Lista de alguns softwares para auxílio na instalação/atualização</H2>
 
   <div class="container">
     <div class="child">
@@ -89,7 +96,7 @@
           </label>
         </li>
         <br>
-        <br>
+
         <button id="download-button"
           data-files="/doc/ChromeStandaloneSetup64.exe /doc/FirefoxSetup105.0.3.exe /doc/MicrosoftEdgeEnterpriseX64.msi /doc/OperaSetup.exe">Download
           Completo</button>
@@ -179,12 +186,12 @@
             <a href="/doc/ServicodeImpressão.rar">Serviço de Impressão</a>
           </label>
         </li>
+        <br>
         <li>
           <label title="Serviço de Impressão">
             <a href="/doc/ServicodeImpressão.rar">Serviço de Impressão</a>
           </label>
         </li>
-        <br>
         <br>
 
         <button id="download-button3" data-files="/doc/configureMeuMovere.exe /doc/ServicodeImpressão.rar">Download
@@ -215,7 +222,6 @@
             <a href="/doc/TeamViewerQS.exe">Team View 15 QS</a>
           </label>
         </li>
-        <br>
         <br>
 
         <button id="download-button4"
@@ -278,19 +284,71 @@
           </label>
         </li>
         <br>
-      
+        <li>
+          <label title="Adobe Reader">
+            <a href="/doc/readerdc64.exe">Adobe Reader</a>
+          </label>
+        </li>
+        <br>
+
         <button id="download-button5"
-          data-files="/doc/winrar_x64r.exe /doc/cutepdf4.exe /doc/LibreOffice_702_Win_x64.msi /doc/jre_8u281_windows_x64.exe /doc/jre_8u281_windows_x64.exe /doc/Speccy64.exe /doc/DiskInfoA64.exe /doc/DiskInfoA64.exe /doc/zabbix_agents_340win.zip /doc/Instalador_Linx_TEF_302.exe">Download
+          data-files="/doc/winrar_x64r.exe /doc/cutepdf4.exe /doc/LibreOffice_702_Win_x64.msi /doc/jre_8u281_windows_x64.exe /doc/jre_8u281_windows_x64.exe /doc/Speccy64.exe /doc/DiskInfoA64.exe /doc/DiskInfoA64.exe /doc/zabbix_agents_340win.zip /doc/Instalador_Linx_TEF_302.exe /doc/readerdc64.exe">Download
+          Completo</button>
+
+      </ul>
+    </div>
+  </div>
+
+  <div class="container6">
+    <div class="child6">
+      <ul>
+        <h4>Ferramentas Desenvolvimento</h4>
+        <li>
+          <label title="File Zilla 3.61">
+            <a href="/doc/FileZilla_3.61.0_win64.exe">File Zilla 3.61</a>
+          </label>
+        </li>
+        <br>
+        <li>
+          <label title="Note Pad ++">
+            <a href="/doc/npp.8.4.6x64.exe">Note Pad ++</a>
+          </label>
+        </li>
+        <br>
+        <li>
+          <label title="Putty 0.77">
+            <a href="/doc/putty-64bit-0.77-installer.msi">Putty 0.77</a>
+          </label>
+        </li>
+        <br>
+        <li>
+          <label title="Visual Code 1.72">
+            <a href="/doc/VSCodeUserSetup-x64-1.72.2.exe">Visual Code 1.72</a>
+          </label>
+        </li>
+        <br>
+        <li>
+          <label title="Python 3.11">
+            <a href="/doc/python-3.11.0-amd64.exe">Python 3.11</a>
+          </label>
+        </li>
+        <br>
+        <li>
+          <label title=".NET 4.8">
+            <a href="/doc/ndp48-web.exe">.NET 4.8</a>
+          </label>
+        </li>
+        <br>
+
+        <button id="download-button6"
+          data-files="/doc/FileZilla_3.61.0_win64.exe /doc/npp.8.4.6x64.exe /doc/putty-64bit-0.77-installer.msi /doc/VSCodeUserSetup-x64-1.72.2.exe /doc/python-3.11.0-amd64.exe /doc/ndp48-web.exe">Download
           Completo</button>
 
       </ul>
     </div>
   </div>
   <br>
-<br>
-<footer>
-  <p class="footer-copyright">Web Drive V.1.0</p>
-</footer>
+  <br>
 
 </body>
 </html>
