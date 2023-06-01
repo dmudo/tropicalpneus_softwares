@@ -27,7 +27,7 @@
     /* Centralizar na vertical e horizontal */
     position: absolute;
     top: 15%;
-    left: 64%;
+    left: 66%;
 
 
 }
@@ -101,6 +101,39 @@
     top: 48%;
     left: 39%;
     font-size: 1vw;
+
+}
+
+.container7 {
+
+	display; flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1vw;
+}
+
+.child7 {
+	
+	position: absolute;
+	top: 70%;
+	left: 66%;
+	font-size: 1vw;
+}
+
+.container8 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1vw;
+}
+
+
+.child8 {
+
+    /* Centralizar na vertical e horizontal */
+    position: absolute;
+    top: 48%;
+    left: 52%;
 
 }
 

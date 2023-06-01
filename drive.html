@@ -18,7 +18,7 @@
 
 <!-- Script para acionar o botão de download-->
 <script type="module">
-  import multiDownload from '/js/drive.js';
+  import multiDownload from '/assinador/js/drive.js';
   document.querySelector('#download-button').addEventListener('click', event => {
     const files = event.target.dataset.files.split(' ');
     multiDownload(files);
@@ -26,7 +26,7 @@
 </script>
 
 <script type="module">
-  import multiDownload from '/js/drive.js';
+  import multiDownload from '/assinador/js/drive.js';
   document.querySelector('#download-button2').addEventListener('click', event => {
     const files = event.target.dataset.files.split(' ');
     multiDownload(files);
@@ -34,7 +34,7 @@
 </script>
 
 <script type="module">
-  import multiDownload from '/js/drive.js';
+  import multiDownload from '/assinador/js/drive.js';
   document.querySelector('#download-button3').addEventListener('click', event => {
     const files = event.target.dataset.files.split(' ');
     multiDownload(files);
@@ -42,7 +42,7 @@
 </script>
 
 <script type="module">
-  import multiDownload from '/js/drive.js';
+  import multiDownload from '/assinador/js/drive.js';
   document.querySelector('#download-button4').addEventListener('click', event => {
     const files = event.target.dataset.files.split(' ');
     multiDownload(files);
@@ -50,7 +50,7 @@
 </script>
 
 <script type="module">
-  import multiDownload from '/js/drive.js';
+  import multiDownload from '/assinador/js/drive.js';
   document.querySelector('#download-button5').addEventListener('click', event => {
     const files = event.target.dataset.files.split(' ');
     multiDownload(files);
@@ -58,12 +58,30 @@
 </script>
 
 <script type="module">
-  import multiDownload from '/js/drive.js';
+  import multiDownload from '/assinador/js/drive.js';
   document.querySelector('#download-button6').addEventListener('click', event => {
     const files = event.target.dataset.files.split(' ');
     multiDownload(files);
   });
 </script>
+
+<script type="module">
+  import multiDownload from '/assinador/js/drive.js';
+  document.querySelector('#download-button7').addEventListener('click', event => {
+    const files = event.target.dataset.files.split(' ');
+    multiDownload(files);
+  });
+</script>
+
+<script type="module">
+  import multiDownload from '/assinador/js/drive.js';
+  document.querySelector('#download-button8').addEventListener('click', event => {
+    const files = event.target.dataset.files.split(' ');
+    multiDownload(files);
+  });
+</script>
+
+
 
 <body>
 
@@ -75,31 +93,31 @@
         <h4>Navegadores</h4>
         <li>
           <label title="Chrome Offline">
-            <a href="/doc/ChromeStandaloneSetup64.exe">Chrome Offline</a>
+            <a href="./doc/ChromeStandaloneSetup64.exe">Chrome Offline</a>
           </label>
         </li>
         <br>
         <li>
           <label title="Firefox Offline">
-            <a href="/doc/FirefoxSetup105.0.3.exe">Firefox Offline</a>
+            <a href="./doc/FirefoxSetup105.0.3.exe">Firefox Offline</a>
           </label>
         </li>
         <br>
         <li>
           <label title="Edge Offline">
-            <a href="/doc/MicrosoftEdgeEnterpriseX64.msi">Edge Offline</a>
+            <a href="./doc/MicrosoftEdgeEnterpriseX64.msi">Edge Offline</a>
           </label>
         </li>
         <br>
         <li>
           <label title="Opera Offline">
-            <a href="/doc/OperaSetup.exe">Opera Offline</a>
+            <a href="./doc/OperaSetup.exe">Opera Offline</a>
           </label>
         </li>
         <br>
 
         <button id="download-button"
-          data-files="/doc/ChromeStandaloneSetup64.exe /doc/FirefoxSetup105.0.3.exe /doc/MicrosoftEdgeEnterpriseX64.msi /doc/OperaSetup.exe">Download
+          data-files="./doc/ChromeStandaloneSetup64.exe ./doc/FirefoxSetup105.0.3.exe ./doc/MicrosoftEdgeEnterpriseX64.msi ./doc/OperaSetup.exe">Download
           Completo</button>
       </ul>
     </div>
@@ -111,61 +129,61 @@
         <h4>Drive Impressoras</h4>
         <li>
           <label title="Brother DCP-7065DN">
-            <a href="/doc/DCP7065DN.exe">Brother DCP-7065DN</a>
+            <a href="./doc/DCP7065DN.exe">Brother DCP-7065DN</a>
           </label>
         </li>
         <br>
         <li>
           <label title="Control Center CC4">
-            <a href="/doc/ControlCenter4Updater.exe">Control Center CC4</a>
+            <a href="./doc/ControlCenter4Updater.exe">Control Center CC4</a>
           </label>
         </li>
         <br>
         <li>
           <label title="Epson XP 241">
-            <a href="/doc/XP241_Lite_LA.exe">Epson XP 241</a>
+            <a href="./doc/XP241_Lite_LA.exe">Epson XP 241</a>
           </label>
         </li>
         <br>
         <li>
           <label title="HP MFP M125">
-            <a href="/doc/LJPro_MFP_M125-126_full_solution_15310.exe">HP MFP M125</a>
+            <a href="./doc/LJPro_MFP_M125-126_full_solution_15310.exe">HP MFP M125</a>
           </label>
         </li>
         <br>
         <li>
           <label title="HP MFP M127">
-            <a href="/doc/LJPro_MFP_M127-M128_basic_15309.exe">HP MFP M127</a>
+            <a href="./doc/LJPro_MFP_M127-M128_basic_15309.exe">HP MFP M127</a>
           </label>
         </li>
         <br>
         <li>
           <label title="LexMark X364 Full">
-            <a href="/doc/Lexmark_X264_X363_X364_ACJ_Admin.exe">LexMark X364 Full</a>
+            <a href="./doc/Lexmark_X264_X363_X364_ACJ_Admin.exe">LexMark X364 Full</a>
           </label>
         </li>
         <br>
         <li>
           <label title="Epson LX350">
-            <a href="/doc/epson15229_windows10.exe">Epson LX350</a>
+            <a href="./doc/epson15229_windows10.exe">Epson LX350</a>
           </label>
         </li>
         <br>
         <li>
           <label title="Samsung SCX 483x 5x3x">
-            <a href="/doc/SCX-483x_5x3x_Series_WIN_Scanner_V3.21.65.11_CDV1.51.exe">Samsung SCX 483x 5x3x</a>
+            <a href="./doc/SCX-483x_5x3x_Series_WIN_Scanner_V3.21.65.11_CDV1.51.exe">Samsung SCX 483x 5x3x</a>
           </label>
         </li>
         <br>
         <li>
           <label title="Smartru Office">
-            <a href="/doc/SmarThruOffice_V2.10.00.07.exe">Smartru Office</a>
+            <a href="./doc/SmarThruOffice_V2.10.00.07.exe">Smartru Office</a>
           </label>
         </li>
         <br>
 
         <button id="download-button2"
-          data-files="/doc/DCP7065DN.exe /doc/ControlCenter4Updater.exe /doc/XP241_Lite_LA.exe /doc/LJPro_MFP_M125-126_full_solution_15310.exe /doc/LJPro_MFP_M127-M128_basic_15309.exe /doc/Lexmark_X264_X363_X364_ACJ_Admin.exe /doc/epson15229_windows10.exe /doc/SCX-483x_5x3x_Series_WIN_Scanner_V3.21.65.11_CDV1.51.exe /doc/SmarThruOffice_V2.10.00.07.exe /doc/SmarThruOffice_V2.10.00.07.exe">Download
+          data-files="./assinador/doc/DCP7065DN.exe ./doc/ControlCenter4Updater.exe ./doc/XP241_Lite_LA.exe ./doc/LJPro_MFP_M125-126_full_solution_15310.exe ./doc/LJPro_MFP_M127-M128_basic_15309.exe ./doc/Lexmark_X264_X363_X364_ACJ_Admin.exe /doc/epson15229_windows10.exe ./doc/SCX-483x_5x3x_Series_WIN_Scanner_V3.21.65.11_CDV1.51.exe ./doc/SmarThruOffice_V2.10.00.07.exe ./doc/SmarThruOffice_V2.10.00.07.exe">Download
           Completo</button>
 
       </ul>
@@ -178,24 +196,24 @@
         <h4>Softwares Movere</h4>
         <li>
           <label title="Configurador Movere">
-            <a href="/doc/configureMeuMovere.exe">Configurador Movere</a>
+            <a href="./doc/configureMeuMovere.exe">Configurador Movere</a>
           </label>
         </li>
         <br>
         <li>
           <label title="Serviço de Impressão">
-            <a href="/doc/ServicodeImpressão.rar">Serviço de Impressão</a>
+            <a href="./doc/ServicodeImpressão.rar">Serviço de Impressão</a>
           </label>
         </li>
         <br>
         <li>
           <label title="Serviço de Impressão">
-            <a href="/doc/ServicodeImpressão.rar">Serviço de Impressão</a>
+            <a href="./doc/ServicodeImpressão.rar">Serviço de Impressão</a>
           </label>
         </li>
         <br>
 
-        <button id="download-button3" data-files="/doc/configureMeuMovere.exe /doc/ServicodeImpressão.rar">Download
+        <button id="download-button3" data-files="./doc/configureMeuMovere.exe ./doc/ServicodeImpressão.rar">Download
           Completo</button>
 
       </ul>
@@ -208,25 +226,31 @@
         <h4>Softwares Check List</h4>
         <li>
           <label title="Sophos AntiVirus">
-            <a href="/doc/SophosSetup.exe">Sophos AntiVirus</a>
+            <a href="./doc/SophosSetup.exe">Sophos AntiVirus</a>
           </label>
         </li>
         <br>
         <li>
           <label title="Open VPN">
-            <a href="/doc/openvpn-install-2.4.11-I602-Win7.exe">Open VPN</a>
+            <a href="./doc/openvpn-install-2.4.11-I602-Win7.exe">Open VPN</a>
           </label>
         </li>
         <br>
         <li>
           <label title="Team View 15 QS">
-            <a href="/doc/TeamViewerQS.exe">Team View 15 QS</a>
+            <a href="./doc/TeamViewerQS.exe">Team View 15 QS</a>
+          </label>
+        </li>
+        <br>
+        <li>
+          <label title="Team View 15 QS">
+            <a href="./doc/AnyDesk.exe">AnyDesk V7</a>
           </label>
         </li>
         <br>
 
         <button id="download-button4"
-          data-files="/doc/SophosSetup.exe /doc/openvpn-install-2.4.11-I602-Win7.exe /doc/TeamViewerQS.exe">Download
+          data-files="./doc/SophosSetup.exe ./doc/openvpn-install-2.4.11-I602-Win7.exe ./doc/TeamViewerQS.exe">Download
           Completo</button>
 
       </ul>
@@ -239,61 +263,61 @@
         <h4>Softwares Diversos</h4>
         <li>
           <label title="Winrar 64x">
-            <a href="/doc/winrar_x64r.exe">Winrar 64x</a>
+            <a href="./doc/winrar_x64r.exe">Winrar 64x</a>
           </label>
         </li>
         <br>
         <li>
           <label title="Cute PDF">
-            <a href="/doc/cutepdf4.exe">Cute PDF</a>
+            <a href="./doc/cutepdf4.exe">Cute PDF</a>
           </label>
         </li>
         <br>
         <li>
           <label title="Libre Office 7">
-            <a href="/doc/LibreOffice_702_Win_x64.msi">Libre Office 7</a>
+            <a href="./doc/LibreOffice_702_Win_x64.msi">Libre Office 7</a>
           </label>
         </li>
         <br>
         <li>
           <label title="Java 8">
-            <a href="/doc/jre_8u281_windows_x64.exe">Java 8</a>
+            <a href="./doc/jre_8u281_windows_x64.exe">Java 8</a>
           </label>
         </li>
         <br>
         <li>
           <label title="Speccy 64">
-            <a href="/doc/Speccy64.exe">Speccy 64</a>
+            <a href="./doc/Speccy64.exe">Speccy 64</a>
           </label>
         </li>
         <br>
         <li>
           <label title="Disk Info A64">
-            <a href="/doc/DiskInfoA64.exe">Disk Info A64</a>
+            <a href="./doc/DiskInfoA64.exe">Disk Info A64</a>
           </label>
         </li>
         <br>
         <li>
           <label title="Zabbix Agente">
-            <a href="/doc/zabbix_agents_340win.zip">Zabbix Agente</a>
+            <a href="./doc/zabbix_agents_340win.zip">Zabbix Agente</a>
           </label>
         </li>
         <br>
         <li>
           <label title="Linx TEF 3.0.2">
-            <a href="/doc/Instalador_Linx_TEF_302.exe">Linx TEF 3.0.2</a>
+            <a href="./doc/Instalador_Linx_TEF_302.exe">Linx TEF 3.0.2</a>
           </label>
         </li>
         <br>
         <li>
           <label title="Adobe Reader">
-            <a href="/doc/readerdc64.exe">Adobe Reader</a>
+            <a href="./doc/readerdc64.exe">Adobe Reader</a>
           </label>
         </li>
         <br>
 
         <button id="download-button5"
-          data-files="/doc/winrar_x64r.exe /doc/cutepdf4.exe /doc/LibreOffice_702_Win_x64.msi /doc/jre_8u281_windows_x64.exe /doc/jre_8u281_windows_x64.exe /doc/Speccy64.exe /doc/DiskInfoA64.exe /doc/DiskInfoA64.exe /doc/zabbix_agents_340win.zip /doc/Instalador_Linx_TEF_302.exe /doc/readerdc64.exe">Download
+          data-files="./doc/winrar_x64r.exe /doc/cutepdf4.exe /doc/LibreOffice_702_Win_x64.msi /doc/jre_8u281_windows_x64.exe /doc/jre_8u281_windows_x64.exe /doc/Speccy64.exe /doc/DiskInfoA64.exe /doc/DiskInfoA64.exe /doc/zabbix_agents_340win.zip /doc/Instalador_Linx_TEF_302.exe /doc/readerdc64.exe">Download
           Completo</button>
 
       </ul>
@@ -303,53 +327,96 @@
   <div class="container6">
     <div class="child6">
       <ul>
-        <h4>Ferramentas Desenvolvimento</h4>
+        <h4>Ferramentas <br> Desenvolvimento</h4>
         <li>
           <label title="File Zilla 3.61">
-            <a href="/doc/FileZilla_3.61.0_win64.exe">File Zilla 3.61</a>
+            <a href="./doc/FileZilla_3.61.0_win64.exe">File Zilla 3.61</a>
           </label>
         </li>
         <br>
         <li>
           <label title="Note Pad ++">
-            <a href="/doc/npp.8.4.6x64.exe">Note Pad ++</a>
+            <a href="./doc/npp.8.4.6x64.exe">Note Pad ++</a>
           </label>
         </li>
         <br>
         <li>
           <label title="Putty 0.77">
-            <a href="/doc/putty-64bit-0.77-installer.msi">Putty 0.77</a>
+            <a href="./doc/putty-64bit-0.77-installer.msi">Putty 0.77</a>
           </label>
         </li>
         <br>
         <li>
           <label title="Visual Code 1.72">
-            <a href="/doc/VSCodeUserSetup-x64-1.72.2.exe">Visual Code 1.72</a>
+            <a href="./doc/VSCodeUserSetup-x64-1.72.2.exe">Visual Code 1.72</a>
           </label>
         </li>
         <br>
         <li>
           <label title="Python 3.11">
-            <a href="/doc/python-3.11.0-amd64.exe">Python 3.11</a>
+            <a href="./doc/python-3.11.0-amd64.exe">Python 3.11</a>
           </label>
         </li>
         <br>
         <li>
           <label title=".NET 4.8">
-            <a href="/doc/ndp48-web.exe">.NET 4.8</a>
+            <a href="./doc/ndp48-web.exe">.NET 4.8</a>
           </label>
         </li>
         <br>
 
         <button id="download-button6"
-          data-files="/doc/FileZilla_3.61.0_win64.exe /doc/npp.8.4.6x64.exe /doc/putty-64bit-0.77-installer.msi /doc/VSCodeUserSetup-x64-1.72.2.exe /doc/python-3.11.0-amd64.exe /doc/ndp48-web.exe">Download
+          data-files="./doc/FileZilla_3.61.0_win64.exe ./doc/npp.8.4.6x64.exe ./doc/putty-64bit-0.77-installer.msi ./doc/VSCodeUserSetup-x64-1.72.2.exe ./doc/python-3.11.0-amd64.exe ./doc/ndp48-web.exe">Download
           Completo</button>
 
       </ul>
     </div>
   </div>
+
+  <div class="container7">
+    <div class="child7">
+      <ul>
+        <h4>Sistemas Operacionais</h4>
+        <li>
+          <label title="Windows 10 Pro 21H2.7 64Bit">
+            <a href="./doc/SW_DVD9_Win_Pro_10_21H2.7_64BIT_Brazilian_Pro_Ent_EDU_N_MLF_X23-15191.ISO">Windows 10 Pro
+              21H2.7 64Bit</a>
+          </label>
+        </li>
+        <br>
+        <button id="download-button7"
+          data-file="./doc/SW_DVD9_Win_Pro_10_21H2.7_64BIT_Brazilian_Pro_Ent_EDU_N_MLF_X23-15191.ISO">Download
+          Completo</button>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container8">
+    <div class="child8">
+      <ul>
+        <h4>Softwares <br> de Auditoria</h4>
+        <li>
+          <label title="Pacote OCS 2.9 32Bits">
+            <a href="./doc/OcsPackage_2.9_32bits.exe">Pacote OCS 2.9 32Bits</a>
+          </label>
+        </li>
+        <br>
+        <li>
+          <label title="Pacote OCS 2.9 64Bits">
+            <a href="./doc/OcsPackage_2.9_64bits.exe">Pacote OCS 2.9 64Bits</a>
+          </label>
+        </li>
+        <br>
+        <button id="download-button8" data-file="./doc/OcsPackage_2.9_64bits.exe ./doc/OcsPackage_2.9_32bits.exe">Download Completo</button>
+      </ul>
+    </div>
+  </div>
+
   <br>
   <br>
 
+  <script src="assinador/js/drive.js"></script>
+
 </body>
+
 </html>
